@@ -1,0 +1,539 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*Estilos generales*/
+.color1{
+  background-color: #c55589;
+}
+.color2{
+  background-color: #98df16;
+}
+.btn-1{
+  background-color: #00AEB4;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.btn-2{
+  border: solid 2px #00AEB4;
+  border-radius: 15px;
+}
+.btn-3{
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  color:#00AEB4;
+  font-weight: bold;
+  background-color: white;
+}
+.ancho-completo{
+  display: block;
+  width: 100px;
+}
+
+.txt-peq{
+  font-size: 12px;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: justify;
+}
+
+.txt-med{
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+
+.txt-gra{
+  font-size: 24px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #00AEB4;
+}
+
+.txt-center{
+  text-align: center;
+
+}
+
+.txt-white{
+  color: white;
+}
+.align-v{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.align-h{
+text-align: center;
+align-content: center;
+}
+.flex{
+  display: flex;
+}
+.inline{
+  display: inline;
+}
+.margin-box{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 100px;
+}
+.margin-box-lados{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+}
+
+.Fondo-color{
+  background-color: #00AEB4;
+  height: 350px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.dos-columnas{
+  width: 49%;
+  min-width: 250px;
+}
+.tres-columnas{
+  width: 33%;
+  min-width: 300px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*Estilos base*/
+.App {
+  text-align: center;
+  height: 100%;
+  background-color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Estilos Footer*/
+.footer{
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.column-footer{
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 250px;
+  margin: 25px;
+}
+
+.gradiente{
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(180deg, rgba(131,178,188,0.20) 0%, rgba(255,255,255,1) 100%);
+  margin-bottom: 25px;
+}
+
+.footer-side{
+  margin-top: 35px;
+  flex-direction: row;
+  width: 40%;
+  margin-bottom: 25px;
+}
+.dos-columnas-footer{
+  display: flex;
+  flex-direction: row;
+}
+.input-box-footer{
+  width: 100%;
+  background-color: #F1F0F0;
+  border: none;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.login-box-footer{
+  width: 50%;
+  background-color: #007e91;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+}
+.login-box-footer:hover{
+background-color: #4f7e80;
+color: #ffffff;
+}
+
+
+
+/* estilos navbar */
+.logo{
+  height: 100px;
+  padding: 16px;
+
+}
+.active{
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 15px;
+  background-color: #00AEB4;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .txt-med{
+  text-decoration: none;
+  list-style-type: none;
+  margin: 1rem;
+}
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  font-size: 16px;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  list-style-type: none;
+  color: #00AEB4;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+nav ul li .btn-2{
+margin-left: 25px;
+}
+nav ul li a:not(.active):hover{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: #c4f6f7;
+  color: #00AEB4;
+}
+.menu{
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+  padding: 14px;
+  background-color: #00AEB4;
+  border-radius: 15px;
+}
+
+nav .menu span{
+  height: 4px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+@media (max-width: 630px){
+  .logo{
+    height: 110px;
+  }
+  .menu:hover{
+    background-color: #78d0e9;
+  }
+  nav ul li .btn-2{
+    margin-left: 10px;
+    }
+  .menu{
+    display: flex;
+  }
+  nav ul li span{
+    display: inline-block;
+    background-color: blue;
+    }
+  nav{
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    }
+    nav ul.open{
+      display: flex;
+    }
+  nav ul li{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
+}
+
+
+/*Login*/
+.login-box{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.input-box{
+  width: 70%;
+  align-self: center;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+.input-box input{
+  width: 100%;
+  background-color: #F1F0F0;
+  border: none;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.input-box h6{
+  color: #3b4250;
+}
+.login-box button{
+  width: 50%;
+  margin-top: 15px;
+}
+.login-box button:hover{
+background-color: #4f7e80;
+color: #ffffff;
+}
+
+/*Registro*/
+.box-passwords{
+  display: flex;
+  flex-direction: row;
+  align-items:end;
+  padding-bottom: 40px;
+}
+.box-passwords div{
+  box-sizing:initial;
+  width: 100%;
+  margin: 5px;
+}
+
+/*blog*/
+.blog-box {
+  display: flex; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 25px;
+}
+
+.imagen-blog {
+  width: 20%; 
+  height: 150px;
+  margin-right: 16px; 
+  border-radius: 10px;
+  object-fit: cover; 
+  text-align: center;
+}
+
+.texto-blog {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 8px; 
+  border-radius: 10px; 
+}
+
+.texto-blog h3 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.texto-blog p {
+  margin-bottom: 16px;
+}
+
+.texto-blog button {
+  background-color: #00aeb4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 140px;
+  justify-content: space-between;
+}
+
+.texto-blog button:hover {
+  background-color: #007e91;
+}
+
+@media (max-width: 768px) {
+  .blog-box {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .imagen-blog {
+    width: 100%; 
+    height: auto; 
+    margin-right: 0;
+    margin-bottom: 16px; 
+    text-align: center;
+  }
+
+  .texto-blog {
+    width: 100%;
+    text-align: center; 
+  }
+}
+
+
+
+/*venta*/
+.venta-box {
+  display: flex; 
+  align-items: center; 
+  align-content: center;
+  flex-wrap: wrap; 
+  width: 30%;
+  background-color: #ebebeb;
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 25px;
+}
+
+.imagen-venta {
+  width: 20%; 
+  height: 150px;
+  margin-right: 16px; 
+  border-radius: 10px;
+  object-fit: cover; 
+  text-align: center;
+}
+
+.texto-venta {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 8px; 
+  border-radius: 10px; 
+}
+
+.texto-venta h3 {
+  margin-bottom: 15px;
+}
+
+
+
+.texto-venta button {
+  background-color: #00aeb4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.texto-venta button:hover {
+  background-color: #007e91;
+}
+
+@media (max-width: 768px) {
+  .venta-box {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .imagen-venta {
+    width: 100%; 
+    height: auto; 
+    margin-right: 0;
+    margin-bottom: 16px; 
+    text-align: center;
+  }
+
+  .texto-venta {
+    width: 100%;
+    text-align: center; 
+  }
+}
+
+
+
